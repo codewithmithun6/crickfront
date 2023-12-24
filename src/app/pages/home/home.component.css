@@ -1,0 +1,21 @@
+/* text-movement.component.css */
+
+.text-container {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .animated-text {
+    display: inline-block;
+    animation: moveText 10s linear infinite;
+  }
+  
+  @keyframes moveText {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

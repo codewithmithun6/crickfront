@@ -1,0 +1,30 @@
+
+<header class="bg-blue-500 text-white p-4 flex justify-between items-center">
+  <!-- Brand Name -->
+  <h1 class="text-white text-xl font-bold">CrickInformer</h1>
+
+  <!-- Navigation Menu -->
+  <nav class="space-x-4">
+    <a [routerLink]="'/home'" href="#" class="hover:underline">Home</a>
+    <a [routerLink]="'/live'" href="#" class="hover:underline">Live Matches</a>
+    <a [routerLink]="'/history'" href="#" class="hover:underline">History</a>
+    <a [routerLink]="'/point-table'" href="#" class="hover:underline">Point Table</a>    
+    
+  </nav>
+
+  <div></div>
+  <a class="text-right font-bold"> {{ currentDate | date: 'dd.MM.yyyy HH:mm' }}</a>
+  
+
+  <!-- Refresh Button -->
+  <!-- <button class="bg-white text-blue-500 px-4 py-2 rounded-full">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/>
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 1 0-18 0 9 9 0 0 0 18 0z"/>
+    </svg>
+  </button> -->
+</header>
+<div class="px-28 py-8">
+  <router-outlet></router-outlet>
+</div>
+
